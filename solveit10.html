@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <P>1. Siapakah Presiden ketiga Republik Indonesia??</P>
+    <input type="radio" name="no1" onclick="fungsiKu1(this.value)" value="bj"> Habibie
+    <input type="radio" name="no1" onclick="fungsiKu1(this.value)" value="abduh"> Abdurahman wahid
+    <input type="radio" name="no1" onclick="fungsiKu1(this.value)" value="soekar"> ir.soekarno
+    <input type="radio" name="no1" onclick="fungsiKu1(this.value)" value="jokowi"> JOKOWI
+    <P>2. berikut adalah nama bahasa pemprograman kecuali........?</P>
+    <input type="radio" name="no2" onclick="fungsiKu2(this.value)" value="python"> python
+    <input type="radio" name="no2" onclick="fungsiKu2(this.value)" value="micro"> Micro:bit
+    <input type="radio" name="no2" onclick="fungsiKu2(this.value)" value="java"> Javascript
+    <input type="radio" name="no2" onclick="fungsiKu2(this.value)" value="html"> HTML
+    <P>3. Skill 1 Sven adalah???</P>
+    <input type="radio" name="no3" onclick="fungsiKu3(this.value)" value="storm"> Storm bolt
+    <input type="radio" name="no3" onclick="fungsiKu3(this.value)" value="god"> God strength
+    <input type="radio" name="no3" onclick="fungsiKu3(this.value)" value="warcry"> Warcry
+    <input type="radio" name="no3" onclick="fungsiKu3(this.value)" value="great"> Greater cleave
+    <P>4. Lagu jojo part 5 yang ke 1 adalah  </P>
+    <input type="radio" name="no4" onclick="fungsiKu4(this.value)" value="gold"> Fighting gold
+    <input type="radio" name="no4" onclick="fungsiKu4(this.value)" value="bloody"> Bloody Stream
+    <input type="radio" name="no4" onclick="fungsiKu4(this.value)" value="chino"> Sono chi no sadame
+    <input type="radio" name="no4" onclick="fungsiKu4(this.value)" value="crusader"> Stardust Crusader
+<br>
+<button id="klikini" onclick="fungsiKu5()"> klik </button>
+<p id="output"></p>
+
+
+<script>
+    
+function fungsiKu1(x) {
+    document.getElementsByName('no1').value=x;
+}
+function fungsiKu2(y) {
+document.getElementsByName("no2").value=y;
+}
+function fungsiKu3(z) {
+    document.getElementsByName("no3").value=z;
+    alert(z)
+}
+function fungsiKu4(v) {
+    document.getElementsByName("no4").value=v;
+}
+function fungsiKu5() {
+    let zw=document.getElementsByName('no1').value;
+    let ou=document.getElementsByName("no2").value;
+    let ar=document.getElementsByName("no3").value;
+    let az=document.getElementsByName("no4").value;
+alert(zw + ou + ar + az)
+   var nilai1=0
+   var nilai2=0
+   var nilai3=0
+   var nilai4=0
+    if(!(zw='bj'))
+    {
+        nilai1=0
+    }else{
+        nilai1+=25
+    }
+    if(!(ou='micro'))
+    {
+        nilai2=0
+    }else{
+        nilai2+=25
+    }
+    if(!(ar='storm'))
+    {
+        nilai3=0
+    }else{
+        nilai3+=25
+    }
+    if(!(az='gold'))
+    {
+        nilai4=0
+    }else{
+        nilai4+=25
+    }
+document.getElementById("output").innerHTML = nilai1+nilai2+nilai3+nilai4}
+</script>
+    
+</body>
+</html>
